@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kennui</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">K1DO</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">What I do</a></li>
+                <li><a href="SampleWorks.html">SampleWorks</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="main hero">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="Image/3d abstract waves black background - Developers GTonics (1080p, h264).mp4" type="video/mp4">
+       
+    </video>
+    <div class="hero-content">
+        <h1>Your All-Around Virtual Assistant<br>& Creative Partner</h1>
+        <h2 class="sub-hero">Bringing Ideas to Life</h2>
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="about-section">
+    <div class="about-wrapper">
+        <div class="about-image">
+            <img src="Image/ABout.jpg" alt="About.jpg">
+        </div>
+        <div class="about-content">
+            <h2>My Story</h2>
+            <p>From a young age, I’ve always been curious—whether it was figuring out how things worked or helping others solve problems. That curiosity turned into a passion for creating, communicating, and connecting with people.</p>
+            <p>I started my journey capturing moments behind the lens as a freelance event photographer, which taught me the value of timing, storytelling, and emotion. As I explored more paths, I found myself drawn to digital work—building websites, managing content, and assisting clients virtually.</p>
+            <p>Working in customer service and tech support gave me a strong foundation in communication and professionalism. Meanwhile, handling social media and web design projects allowed me to tap into my creative side and help businesses grow their online presence.</p>
+            <p class="highlight">Now, I blend all those skills into one mission: to be the flexible, reliable, and creative partner you can count on.</p>
+            <p>Every project is a chance to learn, and every client is a chance to make an impact. Let’s create something meaningful together.</p>
+        </div>
+    </div>
+</section>
+
+<!-- WORK EXPERIENCES -->
+<section class="work-section">
+    <h1 class="work-title">Work Experiences</h1>
+    <ul class="work-grid">
+        <li class="work-card slide-left">
+            <img src="Image/woman-working-call-center-holding-pair-headphones.jpg" alt="">
+            <h2>Customer Service Support</h2>
+            <p>As a technical support we are expected and trained to help customer in giving solution
+                 to their problems that includes internet, calls and text problems. We cater 
+                 questions that are related to device.  Additionally, Offering quality customer service and helping restaurants
+                 overseas, take orders to reduce the number of customers calling so that they can focus only on preparing the food for
+                the customers. Answers inquiries regarding the
+                        restaurant schedule and upselling.</p>
+        </li>
+        <li class="work-card slide-right">
+            <img src="Image/OPti-work.png" alt="">
+            <h2>Executive Assistant</h2>
+            <p>In this role, I provide direct support to executives by organizing calendars, and 
+                preparing reports needed for smooth operations. 
+                I handle internal and external communications, assist in 
+                coordinating team projects, and maintain client relationships. 
+                My focus is on ensuring that executives can dedicate their time to key business 
+                priorities while I manage the daily administrative and organizational tasks. </p>
+        </li>
+        <li class="work-card slide-left">
+            <img src="Image/Photography.jpg" alt="">
+            <h2>Photographer</h2>
+            <p>We capture the moments that matter mostwhether it’s the romance of
+                a wedding, the elegance of a debut, the joy of a birthday party,
+                the energy of a live band, or the pride of graduation. Our goal is to preserve every smile,
+                every detail, and every emotion so you can relive these special memories for years to come.</p>
+        </li>
+        <li class="work-card slide-right">
+            <img src="Image/hands-holding-smartphone-social-media-concept.jpg" alt="">
+            <h2>Social Media Manager</h2>
+            <p> We handle all your band’s online presence—checking inquiries, 
+                managing photos, videos, and text posts, and keeping your followers updated. 
+                From posting schedules for upcoming gigs to 
+                sharing media highlights, we make sure your audience stays engaged and excited. </p>
+        </li>
+        <li class="work-card slide-left">
+            <img src="Image/close-up-image-programer-working-his-desk-office.jpg" alt="">
+            <h2>Web Development</h2>
+            <p>We design and build websites that are both visually appealing and easy to navigate.
+                 From personal portfolios to business sites, we create responsive, user-friendly pages that work seamlessly across devices. 
+                Our goal is to help you make a strong online presence that attracts and engages visitors </p>
+        </li>
+        <li class="work-card slide-right">
+            <img src="Image/customer-relationship-management-concept.jpg" alt="">
+            <h2>Virtual Assistant</h2>
+            <p>As a Virtual Assistant, I support business owners by creating websites, 
+                setting up CRM workflows, and managing lead pipelines. I help streamline operations through automation,
+                 maintain client records, and assist with communication across different platforms. 
+            My role ensures that clients have organized systems in place, allowing them to focus on 
+            growing their business while I handle the technical and administrative tasks.</p>
+        </li>
+    </ul>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>WhatsApp: +63 963 171 7368</p>
+        <p>Email:Edgepiligrino14@gmail.com</p>
+        <p>Location: Dumaguete City, Philippines</p>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 K1do. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.work-card, .about-wrapper, .hero');
+    function showOnScroll() {
+        const triggerBottom = window.innerHeight * 0.85;
+        items.forEach(item => {
+            const itemTop = item.getBoundingClientRect().top;
+            if(itemTop < triggerBottom) {
+                item.classList.add('show');
+            }
+        });
+    }
+    window.addEventListener('scroll', showOnScroll);
+    showOnScroll();
+});
+
+const header = document.querySelector('.header');
+window.addEventListener('scroll', () => {
+    header.style.backgroundColor = window.scrollY > 20 ? "rgba(0,0,0,0.95)" : "rgba(0,0,0,0.85)";
+});
+</script>
+
+</body>
+</html>
